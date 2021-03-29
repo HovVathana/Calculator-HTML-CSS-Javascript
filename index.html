@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container">
+        <form name=calculator class='form'>
+            <table>
+                <tr>
+                    <td colspan="4"><input type="text" READONLY class='inputField' name='inputField' value=""></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" class="button" name=btnAC value=AC onclick="clearInput()"></td>
+                    <td><input type="button" class="button" name=btndel value=DEL onclick="deleteInput()"></td>
+                    <td><input type="button" class="button" name=btnPercent value="%" onclick="display('%')"></td>
+                    <td><input type="button" class="button" id="btnorange" name=btnDivide value=÷ style="font-size: 25px; text-align: center;" onclick="display('÷')"></td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="button" class="button" id="btngray" name=btn7 value=7 onclick="display(7)"></td>
+                    <td><input type="button" class="button" id="btngray" name=btn8 value=8 onclick='display(8)'></td>
+                    <td><input type="button" class="button" id="btngray" name=btn9 value=9 onclick='display(9)'></td>
+                    <td><input type="button" class="button" id="btnorange" name=btnMultiply value=× onclick='display("×")'></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" class="button" id="btngray" name=btn4 value=4 onclick='display(4)'></td>
+                    <td><input type="button" class="button" id="btngray" name=btn5 value=5 onclick='display(5)'></td>
+                    <td><input type="button" class="button" id="btngray" name=btn6 value=6 onclick='display(6)'></td>
+                    <td><input type="button" class="button" id="btnorange" name=btnSubtract value=− onclick='display("−")'></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" class="button" id="btngray" name=btn1 value=1 onclick='display(1)'></td>
+                    <td><input type="button" class="button" id="btngray" name=btn2 value=2 onclick='display(2)'></td>
+                    <td><input type="button" class="button" id="btngray" name=btn3 value=3 onclick='display(3)'></td>
+                    <td><input type="button" class="button" id="btnorange" name=btnAdd value=+ onclick='display("+")'></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="button" class="button" id="btngray" style="width: 110px"name=btn0 value=0 onclick='display(0)'></td>
+                    <td><input type="button" class="button" id="btngray" name=btnDecimal value=. onclick='display(".")'></td>
+                    <td><input type="button" class="button" id="btnorange" name=btnEqual value='=' onclick="equal()"></td>
+                </tr>
+            </table>
+        </form>
+        <div class="credit">
+            <p>VATHANA</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
