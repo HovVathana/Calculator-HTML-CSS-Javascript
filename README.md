@@ -1,5 +1,6 @@
 # Calculator-HTML-CSS-Javascript
-A Simple Calculator HTML/CSS/Javascript.
+A Simple Calculator HTML/CSS/Javascript. 
+[Live Demo](https://vathana-calculator.netlify.app/)
 
 ## Screenshots 
 
